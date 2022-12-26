@@ -1,0 +1,38 @@
+RESULTS REPORT
+Model: SSC_SciBERT
+Encoder: allenai/scibert_scivocab_uncased
+Train scheme: fine-tuning
+Batch size: 4
+Maximum sentence length: 75
+Sentence length unit: token
+Maximum number of tokens in a block: 512
+Dropout rate: 0.1
+Learning rate: 5e-05
+Eps: 1e-08
+LR warmup: False
+Use MLP: False
+Weight decay: 0.001
+
+Metrics:
+Epoch Train loss Test loss Precision  Recall    F1  
+   1   1.106818   0.523015   0.8125   0.8021  0.8040
+   2   0.794184   0.484928   0.8227   0.8039  0.8072
+Confusion matrices
+------------------
+background: 0 
+objective: 1 
+method: 2 
+result: 3 
+other: 4 
+Epoch 1:
+[[421   9  50  11   2]
+ [ 23  88  33  11   0]
+ [ 12  20 352  35   2]
+ [  0   2  24 190   3]
+ [  3   1   0   3  54]]
+Epoch 2:
+[[426  14  39  12   2]
+ [ 15  84  45  11   0]
+ [ 11  13 350  46   1]
+ [  1   0  16 200   2]
+ [  3   0   1   4  53]]
